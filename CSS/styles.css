@@ -34,6 +34,7 @@ body {
 .dropdown {
   float: left;
   overflow: hidden;
+  width: fit-content;
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -54,6 +55,8 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
+  width: 10vw;
+  overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -97,7 +100,7 @@ body {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -117,3 +120,37 @@ body {
     text-align: left;
   }
 }
+
+
+
+
+
+
+
+
+
+/*///////////////////MODULE FLEX BOXES////////////////////*/
+
+.moduleContainer{
+  display: flex;
+  background-color: red;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.moduleImage{
+  width: 25vw;
+}
+
+.moduleText{
+  display: flex;
+  flex-direction: column;
+}
+
+.moduleText>*{
+  padding-left: 2rem;
+}
+
+
