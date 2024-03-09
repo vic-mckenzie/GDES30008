@@ -149,8 +149,29 @@ body {
   flex-direction: column;
 }
 
-.moduleText>*{
+.moduleText{
   padding-left: 2rem;
 }
 
+/*could even do left centre and right to create more interesting layout*/
+.left{
+  justify-content: flex-start;
+}
 
+.center{
+  justify-content: center;
+}
+
+.right{
+  justify-content: flex-end;
+}
+
+.inverse{
+  background-color: #d7a5e7;
+  padding-right: 2rem;
+}
+
+.inverse .moduleText{
+  padding-left: 0;
+  padding-right: 2rem;
+}
