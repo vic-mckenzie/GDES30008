@@ -1,6 +1,5 @@
 
-/*///////////////////MODULE FLEX BOXES////////////////////*/
-
+/*//////////////////MODULE FLEX BOXES////////////////////*/
 .moduleContainer{
   display: flex;
   background-color: beige;
@@ -21,6 +20,7 @@
   width: 25vw;
 }
 
+
 .moduleText{
   padding-left: 2rem;
 }
@@ -38,7 +38,7 @@
 }
 
 .inverse{
-  background-color: #beige;
+  background-color: beige;
   padding-right: 2rem;
 }
 
@@ -46,8 +46,92 @@
   padding-left: 0;
   padding-right: 2rem;
 }
-
 /*/////////////////// END MODULE FLEX BOXES////////////////////*/
 
 
 
+
+
+
+
+
+/*/////////////////// START MODULE TEXT ////////////////////*/
+h1{
+  text-align: center;
+}
+
+.moduleDescription{
+  text-align: center;
+  margin: 0rem 10vw 5vh 10vw;
+}
+/*/////////////////// END MODULE TEXT////////////////////*/
+
+
+
+
+
+
+
+
+/*/////////////////// START MODULE PREV-NEXT BUTTONS ////////////////////*/
+.modulePrevNext{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.prevBtn{
+  margin-left: 10vw;
+}
+
+.nextBtn{
+  margin-right: 10vw;
+}
+/*/////////////////// END MODULE PREV-NEXT BUTTONS ////////////////////*/
+
+
+/*/////////////////// START MODULE PREV-NEXT BUTTONS ////////////////////*/
+button{
+  background:none;
+  border: none;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(191, 137, 179);
+}
+
+
+.modulePrevNext{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.prevBtn{
+  margin-left: 10vw;
+}
+
+.nextBtn{
+  margin-right: 10vw;
+}
+
+.mod2btn{
+  margin-left: auto;
+}
+
+.home{
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+/*/////////////////// END MODULE PREV-NEXT BUTTONS ////////////////////*/
