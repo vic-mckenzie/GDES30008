@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "VicsHandwriting";
+    src: local("VicsHandwriting"), local("VicsHandwriting"),
+      url("../ASSETS/Vichandwriting-Regular.otf");
+    font-weight: bold;
+  }
+  
+body{
+    font-family: 'VicsHandwriting', cursive;
+    font-size: 20pt;
+}
