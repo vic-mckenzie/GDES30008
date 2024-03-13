@@ -2,7 +2,6 @@
 /*//////////////////MODULE FLEX BOXES////////////////////*/
 .moduleContainer{
   display: flex;
-  background-color: beige;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
@@ -38,7 +37,6 @@
 }
 
 .inverse{
-  background-color: beige;
   padding-right: 2rem;
 }
 
@@ -135,3 +133,12 @@ a:hover{
   margin-left: 2vw;
 }
 /*/////////////////// END MODULE PREV-NEXT BUTTONS ////////////////////*/
+
+body{
+  background-image: url("../ASSETS/paperbackground.avif");
+}
+
+#canvas {
+  border: 2px solid;
+  display: block;
+}
