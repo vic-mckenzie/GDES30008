@@ -134,11 +134,59 @@ a:hover{
 }
 /*/////////////////// END MODULE PREV-NEXT BUTTONS ////////////////////*/
 
+
+
 body{
   background-image: url("../ASSETS/paperbackground.avif");
 }
 
 #canvas {
-  border: 2px solid;
-  display: block;
+  border: 2px, solid;
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
+
+
+
+
+
+/*/////////////////// START CONTENT PAGE LINKS POSITIONS ////////////////////*/
+#homeBtn{
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
+#WDBtn{
+  position: absolute;
+  top: 30vh;
+  left: 30vw;
+}
+
+#CCBtn{
+  position: absolute;
+  top: 50vh;
+  right: 40vw;
+}
+
+#PCBtn{
+  position: absolute;
+  bottom: 20vh;
+  left: 10vw;
+}
+
+#RJBtn{
+  position: absolute;
+  right: 10vw;
+  bottom: 10vh;
+}
+
+#SPBtn{
+  position: absolute;
+  right: 20vw;
+  top: 40vh;
+}
+/*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
