@@ -104,6 +104,10 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+a {
+  color: black;
+}
+
 a:hover{
   color: rgb(191, 137, 179);
 }
