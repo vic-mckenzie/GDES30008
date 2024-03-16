@@ -1,19 +1,10 @@
 
-
-  
-
-
-  
-
-  
-  /* Dropdown container - needed to position the dropdown content */
   .dropdown {
     float: left;
     overflow: hidden;
     width: fit-content;
   }
   
-  /* Style the dropdown button to fit inside the topnav */
   .dropdown .dropbtn {
     font-size: 5rem;
     border: none;
@@ -25,7 +16,7 @@
     margin: 0;
   }
   
-  /* Style the dropdown content (hidden by default) */
+  /* hidden by default */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -37,7 +28,6 @@
     z-index: 1;
   }
   
-  /* Style the links inside the dropdown */
   .dropdown-content a {
     float: none;
     color: black;
@@ -47,15 +37,17 @@
     text-align: left;
   }
   
-  /* Add a grey background to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
   }
   
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  /* show on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+
   
   
   

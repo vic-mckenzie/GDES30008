@@ -47,6 +47,29 @@
 /*/////////////////// END MODULE FLEX BOXES////////////////////*/
 
 
+.gridLayout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.progressContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+
+
+
+
+
+
 
 
 
