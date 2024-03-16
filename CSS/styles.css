@@ -1,0 +1,192 @@
+
+/*//////////////////MODULE FLEX BOXES////////////////////*/
+.moduleContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.moduleImage{
+  width: 25vw;
+}
+
+.moduleText{
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+  width: 25vw;
+}
+
+
+.moduleText{
+  padding-left: 2rem;
+}
+
+.left{
+  justify-content: flex-start;
+}
+
+.center{
+  justify-content: center;
+}
+
+.right{
+  justify-content: flex-end;
+}
+
+.inverse{
+  padding-right: 2rem;
+}
+
+.inverse .moduleText{
+  padding-left: 0;
+  padding-right: 2rem;
+}
+/*/////////////////// END MODULE FLEX BOXES////////////////////*/
+
+
+
+
+
+
+
+
+/*/////////////////// START MODULE TEXT ////////////////////*/
+h1{
+  text-align: center;
+}
+
+.moduleDescription{
+  text-align: center;
+  margin: 0rem 10vw 5vh 10vw;
+}
+/*/////////////////// END MODULE TEXT////////////////////*/
+
+
+
+
+
+
+
+
+/*/////////////////// START MODULE PREV-NEXT BUTTONS ////////////////////*/
+.modulePrevNext{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.prevBtn{
+  margin-left: 10vw;
+}
+
+.nextBtn{
+  margin-right: 10vw;
+}
+/*/////////////////// END MODULE PREV-NEXT BUTTONS ////////////////////*/
+
+
+/*/////////////////// START MODULE PREV-NEXT BUTTONS ////////////////////*/
+button{
+  background:none;
+  border: none;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(191, 137, 179);
+}
+
+
+.modulePrevNext{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.prevBtn{
+  margin-left: 10vw;
+}
+
+.nextBtn{
+  margin-right: 10vw;
+}
+
+.mod2btn{
+  margin-left: auto;
+}
+
+.home{
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+/*/////////////////// END MODULE PREV-NEXT BUTTONS ////////////////////*/
+
+
+
+body{
+  background-image: url("../ASSETS/paperbackground.avif");
+}
+
+#canvas {
+  border: 2px, solid;
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+
+
+/*/////////////////// START CONTENT PAGE LINKS POSITIONS ////////////////////*/
+#homeBtn{
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
+#WDBtn{
+  position: absolute;
+  top: 30vh;
+  left: 30vw;
+}
+
+#CCBtn{
+  position: absolute;
+  top: 50vh;
+  right: 40vw;
+}
+
+#PCBtn{
+  position: absolute;
+  bottom: 20vh;
+  left: 10vw;
+}
+
+#RJBtn{
+  position: absolute;
+  right: 10vw;
+  bottom: 10vh;
+}
+
+#SPBtn{
+  position: absolute;
+  right: 20vw;
+  top: 40vh;
+}
+/*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
