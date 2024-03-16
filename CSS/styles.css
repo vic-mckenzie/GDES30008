@@ -138,6 +138,7 @@ a:hover{
 
 body{
   background-image: url("../ASSETS/paperbackground.avif");
+  color: black;
 }
 
 #canvas {
