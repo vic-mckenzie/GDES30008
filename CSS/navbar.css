@@ -13,7 +13,11 @@
     width: fit-content;
   }
 
-  .dropdown a{
+  body{
+    color: black;
+  }
+  
+ a{
     color: black;
   }
   
