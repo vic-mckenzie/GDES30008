@@ -12,14 +12,6 @@
     overflow: hidden;
     width: fit-content;
   }
-
-  body{
-    color: black;
-  }
-  
- a{
-    color: black;
-  }
   
   /* Style the dropdown button to fit inside the topnav */
   .dropdown .dropbtn {
