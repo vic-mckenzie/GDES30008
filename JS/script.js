@@ -1,6 +1,25 @@
+////////////// START CLICK TO SHOW //////////////
+var showLinksButtons = document.getElementsByClassName('WDBtn');
+
+for (var i = 0; i < showLinksButtons.length; i++) {
+  showLinksButtons[i].addEventListener('click', function() {
+    var linksToToggle = document.getElementsByClassName('wdModBtn');
+    for (var j = 0; j < linksToToggle.length; j++) {
+      if (linksToToggle[j].style.display === 'none') {
+        linksToToggle[j].style.display = 'inline-block';
+      } else {
+        linksToToggle[j].style.display = 'none';
+      }
+    }
+  });
+}
+
+////////////// END CLICK TO SHOW //////////////
 
 
-////////////// DRAWING FUNCTION //////////////
+
+
+////////////// START DRAWING FUNCTION //////////////
 class SignTool {
   constructor() {
     this.initVars();
@@ -86,3 +105,4 @@ clearCanvas() {
 }
 
 var canvas = new SignTool();
+////////////// END DRAWING FUNCTION //////////////

@@ -47,35 +47,6 @@
 /*/////////////////// END MODULE FLEX BOXES////////////////////*/
 
 
-.gridLayout{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.progressContainer{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*/////////////////// START MODULE TEXT ////////////////////*/
 h1{
   text-align: center;
@@ -86,12 +57,6 @@ h1{
   margin: 0rem 10vw 5vh 10vw;
 }
 /*/////////////////// END MODULE TEXT////////////////////*/
-
-
-
-
-
-
 
 
 /*/////////////////// START MODULE PREV-NEXT BUTTONS ////////////////////*/
@@ -162,7 +127,27 @@ a:hover{
 /*/////////////////// END MODULE PREV-NEXT BUTTONS ////////////////////*/
 
 
+/*/////////////////// START SITE DEV PROGRESS PAGE////////////////////*/
+.gridLayout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 
+.progressContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+/*/////////////////// END SITE DEV PROGRESS PAGE ////////////////////*/
+
+
+/*/////////////////// START GENERAL ////////////////////*/
 body{
   background-image: url("../ASSETS/paperbackground.avif");
   color: black;
@@ -176,9 +161,7 @@ body{
   left: 0;
   z-index: -1;
 }
-
-
-
+/*/////////////////// END GENERAL ////////////////////*/
 
 
 /*/////////////////// START CONTENT PAGE LINKS POSITIONS ////////////////////*/
@@ -217,4 +200,13 @@ body{
   right: 20vw;
   top: 40vh;
 }
+
+
+.wdModBtn{
+  display: none;
+}
+
+
+
+
 /*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
