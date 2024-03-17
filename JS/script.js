@@ -104,7 +104,7 @@ var canvas = new SignTool();
 
 ////////////// START RANDOM COLOUR //////////////
 function getRandomColor() {
-  return `hsla(${~~(360 * Math.random())}, 70%,  72%, 0.8)`
+  return `hsla(${~~(360 * Math.random())}, 70%,  60%, 0.8)`
 }
 
 const randomColor = getRandomColor();

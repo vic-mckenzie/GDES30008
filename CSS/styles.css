@@ -147,6 +147,7 @@ a {
 body{
   background-image: url("../ASSETS/paperbackground.avif");
   color: black;
+  cursor: url("../ASSETS/artwork/regMouse.PNG"), auto;
 }
 
 a:hover{
@@ -161,6 +162,7 @@ a:hover{
   left: 0;
   z-index: -1;
 }
+
 /*/////////////////// END GENERAL ////////////////////*/
 
 
@@ -239,9 +241,6 @@ a:hover{
   left: 40vw;
   top: 45vh
 }
-
-
-
 /*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
 
 
@@ -251,7 +250,6 @@ a:hover{
 
 
 /*/////////////////// START LINK TRANSITIONS ////////////////////*/
-
 .links-container {
   max-height: 0;
   overflow: hidden;
@@ -273,5 +271,4 @@ a:hover{
   opacity: 1;
   margin-right: 0;
 }
-
 /*/////////////////// END LINK TRANSITIONS ////////////////////*/
