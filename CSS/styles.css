@@ -96,10 +96,6 @@ a {
   color: black;
 }
 
-a:hover{
-  color: rgb(191, 137, 179);
-}
-
 
 .modulePrevNext{
   display: flex;
@@ -153,6 +149,10 @@ body{
   color: black;
 }
 
+a:hover{
+  color: var(--random-color);
+}
+
 #canvas {
   border: 2px, solid;
   display: inline;
@@ -178,7 +178,7 @@ body{
 }
 
 .hoverbtn:hover{
-  color: rgb(169, 79, 0);
+  color: var(--random-color);
 }
 
 #CCBtn{
@@ -237,7 +237,7 @@ body{
 #wdm5{
   position: absolute;
   left: 40vw;
-  top:45vh
+  top: 45vh
 }
 
 
