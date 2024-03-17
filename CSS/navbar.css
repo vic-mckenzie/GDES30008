@@ -1,4 +1,4 @@
-
+/* 
   .dropdown {
     float: left;
     overflow: hidden;
@@ -16,7 +16,7 @@
     margin: 0;
   }
   
-  /* hidden by default */
+   hidden by default 
   .dropdown-content {
     display: none;
     position: absolute;
@@ -41,7 +41,7 @@
     background-color: #ddd;
   }
   
-  /* show on hover */
+  /* show on hover 
   .dropdown:hover .dropdown-content {
     display: block;
   }
