@@ -3,14 +3,8 @@ var showLinksButtons = document.getElementsByClassName('WDBtn');
 
 for (var i = 0; i < showLinksButtons.length; i++) {
   showLinksButtons[i].addEventListener('click', function() {
-    var linksToToggle = document.getElementsByClassName('wdModBtn');
-    for (var j = 0; j < linksToToggle.length; j++) {
-      if (linksToToggle[j].style.display === 'none') {
-        linksToToggle[j].style.display = 'inline-block';
-      } else {
-        linksToToggle[j].style.display = 'none';
-      }
-    }
+    var linksContainer = this.nextElementSibling;
+    linksContainer.classList.toggle('show');
   });
 }
 

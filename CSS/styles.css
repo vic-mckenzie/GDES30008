@@ -177,6 +177,10 @@ body{
   left: 30vw;
 }
 
+.hoverbtn:hover{
+  color: rgb(169, 79, 0);
+}
+
 #CCBtn{
   position: absolute;
   top: 50vh;
@@ -185,14 +189,14 @@ body{
 
 #PCBtn{
   position: absolute;
-  bottom: 20vh;
+  bottom: 10vh;
   left: 10vw;
 }
 
 #RJBtn{
   position: absolute;
   right: 10vw;
-  bottom: 10vh;
+  bottom: 5vh;
 }
 
 #SPBtn{
@@ -201,12 +205,73 @@ body{
   top: 40vh;
 }
 
-
 .wdModBtn{
   display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#wdm1{
+  position: absolute;
+  left: 20vw;
+  top:26vh
+}
+
+#wdm2{
+  position: absolute;
+  left: 40vw;
+  top:23vh
+}
+
+#wdm3{
+  position: absolute;
+  left: 20vw;
+  top:47vh
+}
+
+#wdm4{
+  position: absolute;
+  left: 55vw;
+  top:27vh
+}
+
+#wdm5{
+  position: absolute;
+  left: 40vw;
+  top:45vh
 }
 
 
 
-
 /*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
+
+
+.smallImg{
+  width: 200px;
+}
+
+
+/*/////////////////// START LINK TRANSITIONS ////////////////////*/
+
+.links-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.links-container.show {
+  max-height: 1000px; /* Adjust based on your content */
+}
+
+.link {
+  display: inline-block;
+  margin-right: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, margin-right 0.5s ease-in-out;
+}
+
+.links-container.show .link {
+  opacity: 1;
+  margin-right: 0;
+}
+
+/*/////////////////// END LINK TRANSITIONS ////////////////////*/
