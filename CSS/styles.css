@@ -198,7 +198,7 @@ a:hover{
 #RJBtn{
   position: absolute;
   right: 10vw;
-  bottom: 5vh;
+  bottom: 2vh;
 }
 
 #SPBtn{
@@ -331,3 +331,27 @@ a:hover{
 /*/////////////////// END ARTWORK ////////////////////*/
 
 
+
+/*/////////////////// START MEDIA QUERIES ////////////////////*/
+@media (max-width: 1250px) {
+  
+  .moduleContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    align-content: center;
+  }
+
+  .moduleText {
+    width: 50vw;
+  }
+
+  .progressContainer{
+    align-content: center;
+    align-items: center;
+  }
+  
+}
