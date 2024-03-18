@@ -293,19 +293,41 @@ a:hover{
 
 
 /*/////////////////// START ARTWORK ////////////////////*/
-.artContainer{
-  display: flex;
-  flex-wrap: wrap;
-  z-index: -1;
-}
 
-#backgroundImgContent{
+.backgroundImg{
   width: 98vw;
   height: 98vh;
   display: flex;
   align-items: flex-end;
+  z-index: -1;
 }
 
+#background1{
+  position: absolute;
+  z-index: -1;
+  width: 95vw;
+}
+
+#background2{
+  position: absolute;
+  z-index: -1;
+  top:120vh;
+  width: 95vw;
+}
+
+#background3{
+  position: absolute;
+  z-index: -1;
+  top:260vh;
+  width: 95vw;
+}
+
+#background4{
+  position: absolute;
+  z-index: -1;
+  top:390vh;
+  width: 95vw;
+}
 /*/////////////////// END ARTWORK ////////////////////*/
 
 
