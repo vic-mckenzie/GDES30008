@@ -1,8 +1,7 @@
 :root {
-    --bg-colour: beige;
     --random-color: #000;
 }
 
 body{
-    background-color: var(--bg-colour);
+    background-color: var(--random-color);
 }
