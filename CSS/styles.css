@@ -176,7 +176,7 @@ a:hover{
 #WDBtn{
   position: absolute;
   top: 30vh;
-  left: 30vw;
+  left: 25vw;
 }
 
 .hoverbtn:hover{
@@ -191,8 +191,8 @@ a:hover{
 
 #PCBtn{
   position: absolute;
-  bottom: 10vh;
-  left: 10vw;
+  bottom: 7vh;
+  left: 20vw;
 }
 
 #RJBtn{
@@ -214,7 +214,7 @@ a:hover{
 
 #wdm1{
   position: absolute;
-  left: 20vw;
+  left: 30vw;
   top:26vh
 }
 
@@ -226,14 +226,14 @@ a:hover{
 
 #wdm3{
   position: absolute;
-  left: 20vw;
-  top:47vh
+  left: 25vw;
+  top: 45vh
 }
 
 #wdm4{
   position: absolute;
-  left: 55vw;
-  top:27vh
+  left: 45vw;
+  top:30vh
 }
 
 #wdm5{
@@ -299,58 +299,13 @@ a:hover{
   z-index: -1;
 }
 
-.topleft{
-  position: absolute;
-  top: 10vh;
-  left: 10vw;
-}
-
-.topcenter{
-  position: absolute;
-  top: 10vh;
-  left: 45vw;
-}
-
-.topright{
-  position: absolute;
-  top: 10vh;
-  right: 10vw;
-}
-
-.midleft{
-  position: absolute;
-  top: 50vh;
-  left: 10vw;
-}
-
-.midcenter{
-  position: absolute;
-  top: 45vh;
-  left: 50vw;
-}
-
-.midright{
-  position: absolute;
-  top: 50vh;
-  right: 10vw;
-}
-
-.bottomleft{
-  position: absolute;
-  bottom: 10vh;
-  left: 10vw;
-}
-
-.bottomcenter{
-  position: absolute;
-  bottom: 10vh;
-  left: 45vw;
-}
-
-.bottomright{
-  position: absolute;
-  bottom: 10vh;
-  right: 10vw;
+#backgroundImgContent{
+  width: 98vw;
+  height: 98vh;
+  display: flex;
+  align-items: flex-end;
 }
 
 /*/////////////////// END ARTWORK ////////////////////*/
+
+
