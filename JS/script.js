@@ -9,6 +9,16 @@ for (var i = 0; i < showLinksButtons.length; i++) {
   });
 }
 
+
+var showLinksButtons = document.getElementsByClassName('CCBtn');
+
+for (var i = 0; i < showLinksButtons.length; i++) {
+  showLinksButtons[i].addEventListener('click', function() {
+    var linksContainer2 = this.nextElementSibling;
+    linksContainer2.classList.toggle('show');
+  });
+}
+
 ////////////// END CLICK TO SHOW //////////////
 
 

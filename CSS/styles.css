@@ -239,7 +239,37 @@ a:hover{
 #wdm5{
   position: absolute;
   left: 40vw;
-  top: 45vh
+  top: 45vh;
+}
+
+#ccm6{
+  position: absolute;
+  left: 25vw;
+  top: 50vh;
+}
+
+#ccm7{
+  position: absolute;
+  left: 35vw;
+  top: 45vh;
+}
+
+#ccm8{
+  position: absolute;
+  left: 45vw;
+  top: 45vh;
+}
+
+#ccm9{
+  position: absolute;
+  left: 30vw;
+  top: 62vh;
+}
+
+#ccm10{
+  position: absolute;
+  left: 45vw;
+  top: 62vh;
 }
 /*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
 
