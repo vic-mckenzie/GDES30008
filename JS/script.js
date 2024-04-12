@@ -32,3 +32,7 @@ function getRandomColor() {
 const randomColor = getRandomColor();
 document.documentElement.style.setProperty('--random-color', randomColor);
 ////////////// END RANDOM COLOUR //////////////
+
+
+
+
