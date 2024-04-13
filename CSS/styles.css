@@ -372,6 +372,35 @@ a:hover{
 /*/////////////////// END ARTWORK ////////////////////*/
 
 
+/*/////////////////// START WELCOME PAGE  ////////////////////*/
+#welcomeMessage{
+  position: absolute;
+  width: 600px;
+  left: 50%;
+  top: 40%;
+  margin-left: -300px;
+  font-size: 3rem;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*/////////////////// END WELCOME PAGE  ////////////////////*/
+
+
+
+
+
 
 /*/////////////////// START MEDIA QUERIES ////////////////////*/
 @media (max-width: 1250px) {
@@ -396,3 +425,4 @@ a:hover{
   }
   
 }
+/*/////////////////// END MEDIA QUERIES ////////////////////*/

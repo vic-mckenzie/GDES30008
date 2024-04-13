@@ -35,4 +35,20 @@ document.documentElement.style.setProperty('--random-color', randomColor);
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
 
+  const button = document.getElementById('welcomeMessage');
+
+
+  function showButton() {
+      setTimeout(function() {
+          // Display the button
+          button.style.display = 'block';
+          // Add flashing animation
+          button.querySelector('h3').style.animation = 'flash 1s infinite';
+      }, 15000); // 5000 milliseconds = 5 seconds
+  }
+
+  // Call the function to show the button
+  showButton();
+});

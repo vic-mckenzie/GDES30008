@@ -122,6 +122,10 @@ function lineMaker() {
   }
 }  
 
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+
 
 
 
