@@ -145,6 +145,7 @@ a {
 
 /*/////////////////// START GENERAL ////////////////////*/
 body{
+  margin: 0;
   background-image: url("../ASSETS/paperbackground.avif");
   color: black;
   cursor: url("../ASSETS/artwork/regMouse.PNG"), auto;
@@ -176,7 +177,8 @@ a:hover{
 #WDBtn{
   position: absolute;
   top: 30vh;
-  left: 25vw;
+  left: 15vw;
+  transform: rotate(-12deg);
 }
 
 .hoverbtn:hover{
@@ -185,26 +187,30 @@ a:hover{
 
 #CCBtn{
   position: absolute;
-  top: 50vh;
-  right: 40vw;
+  top: 55vh;
+  right: 30vw;
+  transform: rotate(-5deg);
 }
 
 #PCBtn{
   position: absolute;
-  bottom: 7vh;
-  left: 20vw;
+  bottom: 2vh;
+  left: 10vw;
+  transform: rotate(-6deg);
 }
 
 #RJBtn{
   position: absolute;
-  right: 10vw;
-  bottom: 2vh;
+  left: 10vw;
+  bottom: 5vh;
+  transform: rotate(18deg);
 }
 
 #SPBtn{
   position: absolute;
-  right: 20vw;
-  top: 40vh;
+  right: 15vw;
+  top: 25vh;
+  transform: rotate(12deg);
 }
 
 .wdModBtn{
@@ -214,62 +220,67 @@ a:hover{
 
 #wdm1{
   position: absolute;
-  left: 30vw;
-  top:26vh
+  left: 10vw;
+  top:26vh;
+  transform: rotate(-10deg);
 }
 
 #wdm2{
   position: absolute;
-  left: 40vw;
-  top:23vh
+  left: 30vw;
+  top:23vh;
+  transform: rotate(10deg);
 }
 
 #wdm3{
   position: absolute;
-  left: 25vw;
-  top: 45vh
+  left: 15vw;
+  top: 50vh;
+  transform: rotate(-5deg);
 }
 
 #wdm4{
   position: absolute;
   left: 45vw;
-  top:30vh
+  top:30vh;
+  transform: rotate(-17deg);
 }
 
 #wdm5{
   position: absolute;
-  left: 40vw;
+  left: 32vw;
   top: 45vh;
+  transform: rotate(20deg);
 }
 
 #ccm6{
   position: absolute;
-  left: 25vw;
+  left: 45vw;
   top: 50vh;
 }
 
 #ccm7{
   position: absolute;
-  left: 35vw;
+  left: 60vw;
   top: 45vh;
 }
 
 #ccm8{
   position: absolute;
-  left: 45vw;
-  top: 45vh;
+  left: 75vw;
+  top: 55vh;
 }
 
 #ccm9{
   position: absolute;
-  left: 30vw;
-  top: 62vh;
+  left: 70vw;
+  top: 75vh;
 }
 
 #ccm10{
   position: absolute;
   left: 45vw;
-  top: 62vh;
+  top: 75vh;
 }
 /*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
 

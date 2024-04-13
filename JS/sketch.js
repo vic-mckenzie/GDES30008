@@ -4,7 +4,7 @@ let currentPoint = 0;
 let lineCompleted = true;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight-200);
   background(0,0,0,0);
   frameRate(10);
   generateRandomPoints();
@@ -43,7 +43,7 @@ function generateRandomPoints() {
   points = []; // Clear previous points
   for (let i = 0; i < numPoints; i++) {
     let x = random(50, windowWidth - 50);
-    let y = random(50, windowHeight - 50);
+    let y = random(100, windowHeight - 200);
     points.push(createVector(x, y));
   }
 }
