@@ -148,7 +148,7 @@ body{
   margin: 0;
   background-image: url("../ASSETS/paperbackground.avif");
   color: black;
-  cursor: url("../ASSETS/artwork/regMouse.PNG"), auto;
+  cursor: url("../ASSETS/pencil.png"), auto;
 }
 
 a:hover{
@@ -282,7 +282,33 @@ a:hover{
   left: 45vw;
   top: 75vh;
 }
+
+.instructions{
+  position: absolute;
+  left: 2vw;
+}
 /*/////////////////// END CONTENT PAGE LINKS POSITIONS ////////////////////*/
+
+
+/*/////////////////// START CONTENT PAGE OVERALL ////////////////////*/
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(5deg); }
+ 95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+animation: wiggle 1.5s infinite;
+}
+
+.wiggle:hover {
+animation: none;
+}
+/*/////////////////// END CONTENT PAGE OVERALL ////////////////////*/
+
 
 
 /*/////////////////// START LINK TRANSITIONS ////////////////////*/
@@ -377,11 +403,11 @@ a:hover{
   position: absolute;
   width: 600px;
   left: 50%;
-  top: 40%;
+  top: 55%;
   margin-left: -300px;
   font-size: 3rem;
   display: none;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 2s ease-in;
 }
 
 
@@ -393,6 +419,10 @@ a:hover{
   50% {
     opacity: 0;
   }
+}
+
+#instructions{
+  padding: 3rem;
 }
 
 /*/////////////////// END WELCOME PAGE  ////////////////////*/

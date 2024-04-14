@@ -1,36 +1,48 @@
 
-// P5 Welcome Message by Victoria McKenzie for Interactive Media
+/*
+P5 Welcome Message by Victoria McKenzie for Interactive Media
 
-/// Code adapted from help of "Work with TextToPoints: Neon Sign Themed by Ed Cavett November 2021" Youtube Video https://www.youtube.com/watch?v=509oTsF-4YQ
+This animation has been adapted from an example on Youtube that made a Neon light effect
+Creator: Ed Cavett
+Title: Work with TextToPoints: Neon Sign Themed by Ed Cavett November 2021
+URL: https://www.youtube.com/watch?v=509oTsF-4YQ
+
+Code was then adapted/troubleshooted both personally, and using generative AI, ChatGPT
+*/
 
 let myFont;
 let liner;
 let msg = [];
 
 function preload() {
-  myFont = loadFont("../ASSETS/Vichandwriting-Regular.otf");
+  myFont = loadFont("../ASSETS/Vichandwriting-Regular.otf"); //link custom font
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight/2);
+  createCanvas(windowWidth, windowHeight);
   msg.push("welcome to my sketchbook");
   
   liner = new lineMaker();
   strokeCap(ROUND);
+  frameRate(100);
 }
 
 function draw() {
   liner.update();
+  if (mouseIsPressed){
+    strokeWeight(4);
+    line(pmouseX, pmouseY, mouseX, mouseY);
+  }
 }
 
 function lineMaker() {
   this.msgswitch = 0;
-  this.target = [];
-  this.dart = [];
+  this.target = []; //target array that holds the untouched values
+  this.dart = []; //dart array tracks the current drawing (maps points onto values from target array)
   this.moving = [];
-  this.size = 10;
+  this.size = 10; //text size
   this.count = -1;
-  this.close = 20;
+  this.close = 20; //this is important for the connections between the letters to be smooth and not dotty
   
   
   let m = msg[this.msgswitch];
@@ -55,15 +67,14 @@ function lineMaker() {
     let setx = this.anchor[i].x+center;
     let sety = this.anchor[i].y+(height/2);
 
-    /// Bake the adjustments to the points array
-    /// into the target array locations.
+  //centre both the target and dart array values
     this.target.push(createVector(setx,
                                   sety));
     this.dart.push(createVector(width/2,
                                 height));
   }
   
-  
+  //to track the movement of the line and darts
   this.update = function() {
     this.count += 1;
     let last = this.anchor.length-1;
@@ -91,8 +102,8 @@ function lineMaker() {
     let ty = tary;
     let d = dist(dx,dy,tx,ty);
     
-    /// Advance the dart so long as it is
-    /// n distance away from the target.
+
+    //keep moving the dart as long as its n distance away
     if (d > this.close && this.moving[i]) {
       this.dart[i].x = lerp(this.dart[i].x,
                             this.target[i].x,
@@ -100,6 +111,8 @@ function lineMaker() {
       this.dart[i].y = lerp(this.dart[i].y,
                             this.target[i].y,
                             0.99);
+    //lerp is linear interpolation and is used to control the velocity 
+    //e.g. the last number could be randomized, but 0.99 keeps constant
     }
     push();
     strokeWeight(3);
@@ -121,10 +134,6 @@ function lineMaker() {
     pop();
   }
 }  
-
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-  }
 
 
 
