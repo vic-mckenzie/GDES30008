@@ -19,6 +19,17 @@ for (var i = 0; i < showLinksButtons.length; i++) {
   });
 }
 
+
+var showLinksButtons = document.getElementsByClassName('SPBtn');
+
+for (var i = 0; i < showLinksButtons.length; i++) {
+  showLinksButtons[i].addEventListener('click', function() {
+    var linksContainer3 = this.nextElementSibling;
+    linksContainer3.classList.toggle('show');
+  });
+}
+
+
 ////////////// END CLICK TO SHOW //////////////
 
 
@@ -34,21 +45,17 @@ document.documentElement.style.setProperty('--random-color', randomColor);
 ////////////// END RANDOM COLOUR //////////////
 
 
-
+////////////// START WELCOME MESSAGE //////////////
 document.addEventListener("DOMContentLoaded", function() {
 
   const button = document.getElementById('welcomeMessage');
 
-
   function showButton() {
       setTimeout(function() {
-          // Display the button
           button.style.display = 'block';
-          // Add flashing animation
           button.querySelector('h3').style.animation = 'flash 1s infinite';
-      }, 15000); // 5000 milliseconds = 5 seconds
+      }, 15000); //15 secs
   }
-
-  // Call the function to show the button
   showButton();
 });
+////////////// END WELCOME MESSAGE //////////////

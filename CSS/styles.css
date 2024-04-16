@@ -283,6 +283,20 @@ a:hover{
   top: 75vh;
 }
 
+#sp1{
+  position: absolute;
+  left: 75vw;
+  top: 15vh;
+}
+
+#sp2{
+  position: absolute;
+  left: 75vw;
+  top: 45vh;
+}
+
+
+
 .instructions{
   position: absolute;
   left: 2vw;
