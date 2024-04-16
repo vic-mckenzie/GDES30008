@@ -1,4 +1,3 @@
-
 /*//////////////////MODULE FLEX BOXES////////////////////*/
 .moduleContainer{
   display: flex;
@@ -148,11 +147,16 @@ body{
   margin: 0;
   background-image: url("../ASSETS/paperbackground.avif");
   color: black;
-  cursor: url("../ASSETS/pencil.png"), auto;
+  cursor: url('../pencilcursor.png') 39 100, auto;
 }
 
 a:hover{
   color: var(--random-color);
+  cursor: url('../pencilcursor.png') 39 100, auto;
+}
+
+button:hover{
+  cursor: url('../pencilcursor.png') 39 100, auto;
 }
 
 #canvas {
