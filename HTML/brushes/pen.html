@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/text.css">
+    <link rel="stylesheet" href="../CSS/colours.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+
+    <title>vic's sketchbook</title>
+
+    <link rel="icon" type="image/x-icon" href="../pencil.png">
+
+    <script src="/JS/libraries/p5.min.js"></script>
+    <script src="/JS/libraries/p5.sound.min.js"></script>
+    <script>
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+            background("#fbf8f3");
+          }
+          
+          function draw() {
+            if (mouseIsPressed) {
+              pen();
+            }
+          }
+          
+          function pen() {
+            // set the color and weight of the stroke
+            stroke(0, 0, 0, 255);
+            strokeWeight(2);
+          
+            // draw a line from current mouse point to previous mouse point
+            line(mouseX, mouseY, pmouseX, pmouseY);
+          }
+        </script>
+    
+</head>
+<body>
+
+
+<!--*****************  LINKED JS  *****************-->
+  <script src="../JS/script.js"></script>
+</body>
+</html>

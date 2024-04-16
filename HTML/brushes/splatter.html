@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/text.css">
+    <link rel="stylesheet" href="../CSS/colours.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+
+    <title>vic's sketchbook</title>
+
+    <link rel="icon" type="image/x-icon" href="../pencil.png">
+
+    <script src="/JS/libraries/p5.min.js"></script>
+    <script src="/JS/libraries/p5.sound.min.js"></script>
+    <script>
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+            background("#fbf8f3");
+          }
+          
+          function draw() {
+            if (mouseIsPressed) {
+              splatter();
+            }
+          }
+          
+          function splatter() {
+        // set the color and brush style
+        stroke(frameCount % 255, 180, 255, 160)
+        strokeWeight(4)
+
+        // set the number of times we lerp the point in the for loop
+        const lerps = 8
+
+            // repeat the point with lerping
+        for (let i = 0; i < lerps; i++) {
+
+                // find lerped x and y coordinates of the point
+            const x = lerp(mouseX, pmouseX, i / lerps + lerps)
+            const y = lerp(mouseY, pmouseY, i / lerps + lerps)
+
+                // draw a point
+            point(x, y)
+        }
+        }
+        </script>
+    
+</head>
+<body>
+
+
+<!--*****************  LINKED JS  *****************-->
+  <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/text.css">
+    <link rel="stylesheet" href="../CSS/colours.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+
+    <title>vic's sketchbook</title>
+
+    <link rel="icon" type="image/x-icon" href="../pencil.png">
+
+    <script src="/JS/libraries/p5.min.js"></script>
+    <script src="/JS/libraries/p5.sound.min.js"></script>
+    <script>
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+            background("#fbf8f3");
+          }
+          
+          function draw() {
+            if (mouseIsPressed) {
+              toothpick();
+            }
+          }
+          
+          function toothpick() {
+            // set the color and brush style
+            fill(60, 180, 0, 150)
+            noStroke()
+
+            // move the origin (0,0) to the current mouse point
+            translate(mouseX, mouseY)
+
+            // find the angle of the direction the mouse is moving in
+            // then rotate the canvas by that angle
+            const angle = Math.atan2(mouseY - pmouseY, mouseX - pmouseX)
+            rotate(angle)
+
+            // set minumum width and height of the toothpick-shaped ellipse
+                const minSize = 4
+                
+                // find the distance between current mouse point and previous mouse point
+                const distance = dist(mouseX, mouseY, pmouseX, pmouseY)
+                
+                // draw the toothpick-shaped ellipse
+                ellipse(0, 0, distance * 2 + minSize, minSize)
+            }
+        </script>
+</head>
+<body>
+
+
+<!--*****************  LINKED JS  *****************-->
+  <script src="../JS/script.js"></script>
+</body>
+</html>
