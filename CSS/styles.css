@@ -168,6 +168,12 @@ a:hover{
 
 
 /*/////////////////// START CONTENT PAGE LINKS POSITIONS ////////////////////*/
+#homepageh1{
+  margin: 0;
+  padding-top: 5vh;
+  z-index: 10;
+}
+
 #homeBtn{
   position: absolute;
   top: 15vh;

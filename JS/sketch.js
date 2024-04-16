@@ -15,7 +15,7 @@ let currentPoint = 0;
 let lineCompleted = true;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight-100);
+  createCanvas(windowWidth, windowHeight);
   background(0,0,0,0);
   frameRate(10);
   generateRandomPoints();
@@ -23,7 +23,6 @@ function setup() {
 }
 
 function draw() {
-
   if (lineCompleted) {
     clear(); //to clear the current line
     setTimeout(drawNewLine, 5000); 
@@ -44,8 +43,8 @@ function draw() {
 }
 
 function drawNewLine() {
-  stroke(random(255), random(255), random(255), random(50, 150));
-  strokeWeight(random(2, 10));
+  stroke(random(255), random(255), random(255), 50);
+  strokeWeight(random(5, 30));
   generateRandomPoints(); // make new points for new line
   currentPoint = 0; // reset the current point
   lineCompleted = true;
@@ -54,8 +53,8 @@ function drawNewLine() {
 function generateRandomPoints() {
   points = []; // clear prev points
   for (let i = 0; i < numPoints; i++) {
-    let x = random(50, windowWidth - 50); // keep it central-ish
-    let y = random(50, windowHeight - 200); // to protect the title, instead of having line go over h1
+    let x = random(50, windowWidth-50); // keep it central-ish
+    let y = random(100, windowHeight-100); // to protect the title, instead of having line go over h1
     points.push(createVector(x, y));
   }
 }
