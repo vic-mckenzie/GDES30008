@@ -209,17 +209,24 @@ button:hover{
   transform: rotate(-6deg);
 }
 
-#RJBtn{
+/*#RJBtn{
   position: absolute;
   left: 10vw;
-  bottom: 5vh;
-  transform: rotate(18deg);
+  bottom: 25vh;
+  transform: rotate(8deg);
 }
-
+*/
 #SPBtn{
   position: absolute;
   right: 15vw;
   top: 25vh;
+  transform: rotate(12deg);
+}
+
+#SkBtn{
+  position: absolute;
+  left: 10vw;
+  bottom: 10vh;
   transform: rotate(12deg);
 }
 
