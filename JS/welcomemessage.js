@@ -16,7 +16,7 @@ let msg = [];
 
 
 function preload() {
-  myFont = loadFont("../ASSETS/Vichandwriting-Regular.otf"); //link custom font
+  myFont = loadFont("ASSETS/Vichandwriting-Regular.otf"); //link custom font
 }
 
 
