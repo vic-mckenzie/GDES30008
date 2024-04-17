@@ -14,15 +14,18 @@ let myFont;
 let liner;
 let msg = [];
 
-/*
+
 function preload() {
   myFont = loadFont("../ASSETS/Vichandwriting-Regular.otf"); //link custom font
 }
-*/
+
 
 function setup() {
+  console.log("Start Setup");
   createCanvas(windowWidth, windowHeight);
+  console.log("After canvas");
   msg.push("welcome to my sketchbook");
+
   
   liner = new lineMaker();
   strokeCap(ROUND);

@@ -44,7 +44,7 @@ function draw() {
 
 function drawNewLine() {
   stroke(random(255), random(255), random(255), 50);
-  strokeWeight(random(5, 30));
+  strokeWeight(random(3, 20));
   generateRandomPoints(); // make new points for new line
   currentPoint = 0; // reset the current point
   lineCompleted = true;
