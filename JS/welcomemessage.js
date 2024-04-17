@@ -14,9 +14,11 @@ let myFont;
 let liner;
 let msg = [];
 
+/*
 function preload() {
   myFont = loadFont("../ASSETS/Vichandwriting-Regular.otf"); //link custom font
 }
+*/
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
