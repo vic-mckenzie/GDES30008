@@ -8,7 +8,11 @@ Title: Work with TextToPoints: Neon Sign Themed by Ed Cavett November 2021
 URL: https://www.youtube.com/watch?v=509oTsF-4YQ
 
 Code was then adapted/troubleshooted both personally, and using generative AI, ChatGPT
+
+SUBMITTABLE VERSION
 */
+
+
 
 let myFont;
 let liner;
