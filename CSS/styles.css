@@ -198,14 +198,14 @@ button:hover{
 #CCBtn{
   position: absolute;
   top: 55vh;
-  right: 30vw;
+  right: 10vw;
   transform: rotate(-5deg);
 }
 
 #PCBtn{
   position: absolute;
-  bottom: 2vh;
-  left: 10vw;
+  bottom: 30vh;
+  left: 30vw;
   transform: rotate(-6deg);
 }
 
@@ -310,6 +310,43 @@ button:hover{
   position: absolute;
   left: 75vw;
   top: 45vh;
+}
+
+
+#pc1{
+  position: absolute;
+  left: 35vw;
+  top: 40vh;
+}
+
+#pc2{
+  position: absolute;
+  left: 50vw;
+  top: 35vh;
+}
+
+#pc3{
+  position: absolute;
+  left: 60vw;
+  top: 45vh;
+}
+
+#pc4{
+  position: absolute;
+  left: 55vw;
+  top: 65vh;
+}
+
+#pc5{
+  position: absolute;
+  left: 35vw;
+  top: 65vh;
+}
+
+#pc6{
+  position: absolute;
+  left: 45vw;
+  top: 70vh;
 }
 
 

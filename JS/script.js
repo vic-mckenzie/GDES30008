@@ -29,6 +29,15 @@ for (var i = 0; i < showLinksButtons.length; i++) {
   });
 }
 
+var showLinksButtons = document.getElementsByClassName('PCBtn');
+
+for (var i = 0; i < showLinksButtons.length; i++) {
+  showLinksButtons[i].addEventListener('click', function() {
+    var linksContainer3 = this.nextElementSibling;
+    linksContainer3.classList.toggle('show');
+  });
+}
+
 
 ////////////// END CLICK TO SHOW //////////////
 
